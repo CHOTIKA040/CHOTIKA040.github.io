@@ -49,7 +49,7 @@ main {
 
 .PictureSky {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* เปลี่ยน minmax(300px, 1fr) เป็น minmax(250px, 1fr) เพื่อทำให้รูปเล็กลง */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   grid-gap: 20px;
   background-color: #f4f4f4;
   padding: 20px;
@@ -58,7 +58,7 @@ main {
 
 .PictureSky img {
   max-width: 100%;
-  height: auto; /* เพิ่มคำสั่งนี้เพื่อให้รูปภาพปรับขนาดตามอัตราส่วนของมันเอง */
+  height: auto; 
   border-radius: 5px 5px 0 0;
 }
 
