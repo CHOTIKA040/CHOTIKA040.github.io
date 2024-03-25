@@ -92,15 +92,15 @@ section {
   align-items: center;
 }
 
-.contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 20px;
-}
-
 .contact h2 {
   text-align: left;
   padding-bottom: 20px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ปรับให้มีคอลัมน์ 3 คอลัมน์ */
+  grid-gap: 20px;
 }
 
 .contact a {
@@ -110,12 +110,17 @@ section {
   background-color: #eddfdf;
   padding: 10px;
   border-radius: 10px;
+  width: 100px; /* กำหนดความกว้างของลิงค์ */
+  height: auto; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
 }
 
 .contact a img {
-  width: 100px; /* กำหนดความกว้างของภาพเป็น 100px */
+  max-width: 100%; /* ให้รูปภาพขนาดไม่เกินกว่าลิงค์ */
+  max-height: 100%; /* ให้รูปภาพขนาดไม่เกินกว่าลิงค์ */
+  width: auto; /* ให้ความกว้างปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
   height: auto; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
 }
+
 
 @media screen and (max-width: 600px) {
   .contact {
