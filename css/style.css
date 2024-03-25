@@ -52,18 +52,17 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   grid-gap: 20px;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 20px 20px 20px 70px;
   border-radius: 5px;
+  align-items: center; /* จัดให้รูปภาพและตัวหนังสืออยู่ตรงกลาง */
 }
 
 .PictureSky img {
-  max-width: 250px; /* กำหนดความกว้างสูงสุดของรูปภาพเป็น 250px */
-  max-height: 250px; /* กำหนดความสูงสูงสุดของรูปภาพเป็น 250px */
-  width: auto; /* ให้ความกว้างปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
-  height: auto; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
-  border-radius: 5px 5px 0 0;
+  width: 250px; /* กำหนดความกว้างของรูปภาพเป็น 250px */
+  height: 250px; /* กำหนดความสูงของรูปภาพเป็น 250px */
+  object-fit: cover; /* ให้รูปภาพปรับขนาดให้พอดีกับตำแหน่งของกรอบ */
+  border-radius: 5px; /* ปรับรูปภาพให้มีมุมโค้ง */
 }
-
 
 footer {
   background-color: #333;
