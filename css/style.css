@@ -1,81 +1,94 @@
 /* Reset CSS */
+/* รีเซ็ตค่า margin, padding, และ box-sizing เพื่อให้ทุกองค์ประกอบมีขอบเขตการแสดงผลเดียวกัน */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* กำหนดรูปแบบฟอนต์และขอบเขตของ body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* เลือกฟอนต์เป็น Arial หรือ sans-serif และกำหนด margin และ padding เป็น 20px */
   margin: 0;
   padding: 20px;
-  text-align: center;
+  text-align: center; /* จัดเนื้อหาตรงกลางของหน้าเว็บ */
 }
-  
+
+/* กำหนดสไตล์สำหรับ header */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #333; /* กำหนดสีพื้นหลัง */
+  color: #fff; /* กำหนดสีข้อความ */
+  padding: 20px; /* กำหนดระยะห่างของข้อความด้านใน header */
 }
-  
+
+/* กำหนดรูปแบบของข้อความใน header */
 header h1 {
-  margin: 10px;
+  margin: 10px; /* กำหนดระยะห่างของข้อความใน header */
 }
-  
+
+/* กำหนดสไตล์สำหรับ main */
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 140px); /* Adjust height according to header and footer */
+  display: flex; /* กำหนดให้เนื้อหาภายใน main เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+  height: calc(100vh - 140px); /* กำหนดความสูงของ main ให้เต็มหน้าจอและลบความสูงของ header และ footer ออก */
 }
 
+/* กำหนดสไตล์สำหรับ popup-grid */
 .popup-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  display: grid; /* กำหนดให้เนื้อหาภายใน popup-grid เรียงเป็นตาราง */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* กำหนดความกว้างของคอลัมน์ในกริดให้เป็นอัตโนมัติและมีความกว้างอย่างน้อย 300px */
+  grid-gap: 20px; /* กำหนดระยะห่างระหว่างองค์ประกอบในกริด */
 }
 
+/* กำหนดสไตล์สำหรับ popup */
 .popup {
-  background-color: rgba(5, 5, 5, 0.8);
-  color: #fbed25;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: rgba(5, 5, 5, 0.8); /* กำหนดสีพื้นหลังโปร่งใส */
+  color: #fbed25; /* กำหนดสีข้อความ */
+  padding: 40px; /* กำหนดระยะห่างของข้อความด้านใน popup */
+  border-radius: 10px; /* กำหนดขอบมนของ popup */
+  text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
 }
 
+/* กำหนดรูปแบบของข้อความใน popup */
 .popup h2 {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* กำหนดระยะห่างของข้อความใน popup */
 }
 
+/* กำหนดรูปแบบของย่อหน้าใน popup */
 .popup p {
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* กำหนดระยะห่างของย่อหน้าใน popup */
 }
 
+/* กำหนดสไตล์สำหรับปุ่มใน popup */
 .popup button {
-  padding: 10px 20px;
-  background-color: #ffcc00;
-  border: none;
-  border-radius: 5px;
-  color: #333;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px; /* กำหนดขนาดและระยะห่างของปุ่ม */
+  background-color: #ffcc00; /* กำหนดสีพื้นหลังของปุ่ม */
+  border: none; /* ลบเส้นขอบ */
+  border-radius: 5px; /* กำหนดขอบมนของปุ่ม */
+  color: #333; /* กำหนดสีข้อความ */
+  cursor: pointer; /* เปลี่ยนรูปแบบเมาส์เป็นเคอร์เซอร์ */
+  transition: background-color 0.3s ease; /* เพิ่มอนิเมชันเมื่อ hover */
 }
 
+/* กำหนดสไตล์ของปุ่มเมื่อ hover */
 .popup button:hover {
-  background-color: #ffd633;
+  background-color: #ffd633; /* กำหนดสีพื้นหลังของปุ่มเมื่อ hover */
 }
 
+/* กำหนดสไตล์สำหรับ footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
+  background-color: #333; /* กำหนดสีพื้นหลัง */
+  color: #fff; /* กำหนดสีข้อความ */
+  text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง*/
   padding: 20px;
   margin: 40;
 }
 
-/* Media query for smaller screens */
+/* Media query สำหรับหน้าจอขนาดเล็ก */
 @media screen and (max-width: 600px) {
   .popup-grid {
-    grid-template-columns: 1fr; /* Change grid to one column */
+    grid-template-columns: 1fr; /* เปลี่ยนการจัดเรียงของกริดให้มีคอลัมน์เดียว */
   }
 }
+

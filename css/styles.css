@@ -1,193 +1,190 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
+  font-family: Arial, sans-serif; /* เลือกฟอนต์ให้เป็น Arial หรือฟอนต์ sans-serif */
+  margin: 0; /* ไม่มีการกำหนด margin */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน body */
+  text-align: center; /* จัดเนื้อหาภายใน body ตรงกลาง */
 }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 10;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; 
-    background-color: #333; 
-    padding: 10px; 
-  }
-  
-  nav ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px; 
-  }
-  
-  nav ul li a {
-    color: white; 
-    text-decoration: none; 
-  }
+
+header {
+  background-color: #333; /* กำหนดสีพื้นหลังของ header */
+  color: #fff; /* กำหนดสีข้อความของ header */
+  padding: 20px; /* กำหนดระยะห่างของข้อความภายใน header */
+}
+
+header h1 {
+  margin: 10; /* กำหนดระยะห่างของข้อความภายใน header */
+}
+
+nav {
+  display: flex; /* กำหนดให้เนื้อหาภายใน nav เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายใน nav อยู่ตรงกลางแนวนอน */
+  background-color: #333; /* กำหนดสีพื้นหลังของ nav */
+  padding: 10px; /* กำหนดระยะห่างของเนื้อหาภายใน nav */
+}
+
+nav ul {
+  list-style-type: none; /* ไม่แสดงสัญลักษณ์ของลิสต์ */
+  margin: 0; /* ไม่มีการกำหนด margin */
+  padding: 0; /* ไม่มีการกำหนด padding */
+  display: flex; /* กำหนดให้เนื้อหาภายใน nav เรียงแนวนอน */
+}
+
+nav ul li {
+  margin: 0 10px; /* กำหนดระยะห่างของรายการของลิสต์ */
+}
+
+nav ul li a {
+  color: white; /* กำหนดสีข้อความของลิงก์ */
+  text-decoration: none; /* ไม่มีการเส้นใต้ในข้อความลิงก์ */
+}
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid; /* กำหนดให้เนื้อหาภายใน main เรียงเป็นกริด */
+  grid-template-columns: 1fr; /* กำหนดจำนวนและขนาดของคอลัมน์ */
+  grid-gap: 20px; /* กำหนดระยะห่างระหว่างองค์ประกอบในกริด */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน main */
 }
 
 section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
+  background-color: #f9f9f9; /* กำหนดสีพื้นหลังของ section */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน section */
+  border-radius: 5px; /* กำหนดขอบมนของ section */
 }
 
 .introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
+  display: flex; /* กำหนดให้เนื้อหาภายใน introduction เรียงแนวนอน */
+  flex-direction: column; /* กำหนดเรียงลำดับเนื้อหาใน introduction เป็นแนวตั้ง */
+  align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+  background-color: #f4f4f4; /* กำหนดสีพื้นหลังของ introduction */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน introduction */
+  border-radius: 5px; /* กำหนดขอบมนของ introduction */
 }
 
 .introduction img {
-  width: 150px;
-  height: 150px; 
-  border-radius: 20px;
+  width: 150px; /* กำหนดความกว้างของรูปภาพ */
+  height: 150px; /* กำหนดความสูงของรูปภาพ */
+  border-radius: 20px; /* กำหนดขอบมนของรูปภาพ */
 }
 
 .Resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
+  display: flex; /* กำหนดให้เนื้อหาภายใน Resume เรียงแนวตั้ง */
+  flex-direction: column; /* กำหนดเรียงลำดับเนื้อหาใน Resume เป็นแนวตั้ง */
+  align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+  background-color: #f4f4f4; /* กำหนดสีพื้นหลังของ Resume */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน Resume */
+  border-radius: 5px; /* กำหนดขอบมนของ Resume */
 }
 
 .Resueme h2 {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+  padding-top: 20px; /* กำหนดระยะห่างด้านบน */
+  padding-bottom: 20px; /* กำหนดระยะห่างด้านล่าง */
 }
 
 .Resueme h3 {
-  text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-align: left; /* จัดให้ข้อความชิดซ้าย */
+  padding-top: 20px; /* กำหนดระยะห่างด้านบน */
+  padding-bottom: 20px; /* กำหนดระยะห่างด้านล่าง */
 }
 
 .Resueme p {
-  text-align: left;
-  padding: 5px;
+  text-align: left; /* จัดให้ข้อความชิดซ้าย */
+  padding: 5px; /* กำหนดระยะห่างของเนื้อหาภายใน */
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* กำหนดให้เนื้อหาภายใน container เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายใน container อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้เนื้อหาภายใน container อยู่ตรงกลางแนวตั้ง */
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* แก้ grid-template-columns เป็น 50px */
-  grid-gap: 20px;
+  display: grid; /* กำหนดให้เนื้อหาภายใน contact เรียงเป็นกริด */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* กำหนดขนาดของคอลัมน์ให้เป็น 50px */
+  grid-gap: 20px; /* กำหนดระยะห่างระหว่างองค์ประกอบในกริด */
 }
 
 .contact h2 {
-  text-align: center;
-  padding-bottom: 20px;
+  text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+  padding-bottom: 20px; /* กำหนดระยะห่างด้านล่าง */
 }
 
 .contact a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fbfeff;
-  padding: 10px;
-  border-radius: 10px;
+  display: flex; /* กำหนดให้เนื้อหาภายใน a เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายใน a อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้เนื้อหาภายใน a อยู่ตรงกลางแนวตั้ง */
+  background-color: #fbfeff; /* กำหนดสีพื้นหลังของ a */
+  padding: 10px; /* กำหนดระยะห่างของเนื้อหาภายใน a */
+  border-radius: 10px; /* กำหนดขอบมนของ a */
 }
 
 .contact a img {
-  width: 80px; /* กำหนดความกว้างของรูปภาพเป็น 50px */
+  width: 80px; /* กำหนดความกว้างของรูปภาพ */
   height: auto; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
 }
 
-
 .container1 {
-  display: flex;
+  display: flex; /* กำหนดให้เนื้อหาภายใน container1 เรียงแนวนอน */
   justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
 }
 
 .skill-item {
-  margin: 0 20px; /* ระยะห่างระหว่างข้อมูล */
+  margin: 0 20px; /* กำหนดระยะห่างระหว่างข้อมูลด้านซ้ายและด้านขวา */
 }
 
 .skill-chart,
 .skill-chart1 {
-  position: relative;
-  width: 100px; /* ขนาดของวงกลม */
-  height: 100px; /* ขนาดของวงกลม */
-  border-radius: 50%; /* ทำให้เป็นวงกลม */
-  background-color: #f0f0f0; /* สีพื้นหลังของวงกลม */
+  position: relative; /* กำหนดให้มีตำแหน่งเป็น relative */
+  width: 100px; /* กำหนดความกว้างของวงกลม */
+  height: 100px; /* กำหนดความสูงของวงกลม */
+  border-radius: 50%; /* กำหนดให้มีรูปร่างเป็นวงกลม */
+  background-color: #f0f0f0; /* กำหนดสีพื้นหลังของวงกลม */
 }
 
 .skill-chart-circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #00cc00; /* สีของกราฟฟิก */
-  clip-path: inset(0 30% 0 0); /* ตัดส่วนของวงกลมที่ไม่ต้องการ */
+  position: absolute; /* กำหนดให้มีตำแหน่งเป็น absolute */
+  width: 100%; /* กำหนดความกว้างของวงกลมเต็ม */
+  height: 100%; /* กำหนดความสูงของวงกลมเต็ม */
+  border-radius: 50%; /* กำหนดให้มีรูปร่างเป็นวงกลม */
+  background-color: #00cc00; /* กำหนดสีของกราฟฟิก */
+  clip-path: inset(0 30% 0 0); /* กำหนดการตัดส่วนของวงกลมที่ไม่ต้องการ */
 }
 
-
 .skill-chart-circle1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #fadf33; /* สีของกราฟฟิก */
-  clip-path: inset(0 40% 0 0); /* ตัดส่วนของวงกลมที่ไม่ต้องการ */
+  position: absolute; /* กำหนดให้มีตำแหน่งเป็น absolute */
+  width: 100%; /* กำหนดความกว้างของวงกลมเต็ม */
+  height: 100%; /* กำหนดความสูงของวงกลมเต็ม */
+  border-radius: 50%; /* กำหนดให้มีรูปร่างเป็นวงกลม */
+  background-color: #fadf33; /* กำหนดสีของกราฟฟิก */
+  clip-path: inset(0 40% 0 0); /* กำหนดการตัดส่วนของวงกลมที่ไม่ต้องการ */
 }
 
 .skill-chart-percent,
 .skill-chart-percent1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  color: #333; /* สีของเลข % */
+  position: absolute; /* กำหนดให้มีตำแหน่งเป็น absolute */
+  top: 50%; /* กำหนดให้อยู่ตรงกลางแนวตั้ง */
+  left: 50%; /* กำหนดให้อยู่ตรงกลางแนวนอน */
+  transform: translate(-50%, -50%); /* ใช้ transform เพื่อจัดให้อยู่ตรงกลาง */
+  font-family: Arial, sans-serif; /* เลือกใช้ฟอนต์ Arial หรือ sans-serif */
+  font-size: 20px; /* กำหนดขนาดของตัวอักษร */
+  color: #333; /* กำหนดสีของเลข % */
 }
-
 
 @media screen and (max-width: 600px) {
   .contact {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* เปลี่ยนจำนวนคอลัมน์ใน grid เป็น 2 ในหน้าจอที่มีความกว้างไม่เกิน 600px */
   }
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  main {
+      grid-template-columns: repeat(2, 1fr); /* เปลี่ยนจำนวนคอลัมน์ใน grid เป็น 2 เมื่อหน้าจอมีความกว้างไม่ต่ำกว่า 768px */
+  }
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
+  background-color: #333; /* กำหนดสีพื้นหลังของ footer */
+  color: #fff; /* กำหนดสีข้อความของ footer */
+  text-align: center; /* จัดให้ข้อความใน footer อยู่ตรงกลาง */
+  padding: 20px; /* กำหนดระยะห่างของข้อความภายใน footer */
+}

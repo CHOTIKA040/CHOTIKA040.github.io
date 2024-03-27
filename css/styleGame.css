@@ -1,93 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+  font-family: Arial, sans-serif; /* เลือกฟอนต์ให้เป็น Arial หรือฟอนต์ sans-serif */
+  margin: 0; /* ไม่มีการกำหนด margin */
+  padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน body */
+  text-align: center; /* จัดเนื้อหาภายใน body ตรงกลาง */
 }
 
 header {
-    background-color: #333333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 10;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; 
-    background-color: #333; 
-    padding: 10px; 
-  }
-  
-  nav ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px; 
-  }
-  
-  nav ul li a {
-    color: white; 
-    text-decoration: none; 
-  }
-  
+  background-color: #333333; /* กำหนดสีพื้นหลังของ header */
+  color: #fff; /* กำหนดสีข้อความของ header */
+  padding: 20px; /* กำหนดระยะห่างของข้อความภายใน header */
+}
+
+header h1 {
+  margin: 10; /* กำหนดระยะห่างของข้อความภายใน header */
+}
+
+nav {
+  display: flex; /* กำหนดให้เนื้อหาภายใน nav เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายใน nav อยู่ตรงกลางแนวนอน */
+  background-color: #333; /* กำหนดสีพื้นหลังของ nav */
+  padding: 10px; /* กำหนดระยะห่างของเนื้อหาภายใน nav */
+}
+
+nav ul {
+  list-style-type: none; /* ไม่แสดงสัญลักษณ์ของลิสต์ */
+  margin: 0; /* ไม่มีการกำหนด margin */
+  padding: 0; /* ไม่มีการกำหนด padding */
+  display: flex; /* กำหนดให้เนื้อหาภายใน nav เรียงแนวนอน */
+}
+
+nav ul li {
+  margin: 0 10px; /* กำหนดระยะห่างของรายการของลิสต์ */
+}
+
+nav ul li a {
+  color: white; /* กำหนดสีข้อความของลิงก์ */
+  text-decoration: none; /* ไม่มีการเส้นใต้ในข้อความลิงก์ */
+}
+
 #game-container {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+  margin: 0 auto; /* จัดเนื้อหาให้อยู่ตรงกลางของหน้าจอ */
 }
 
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    margin: 50px auto;
-    padding: 20px auto;
-    justify-content: center;
+  display: grid; /* กำหนดให้เนื้อหาภายใน board เรียงเป็นกริด */
+  grid-template-columns: repeat(3, 1fr); /* กำหนดจำนวนและขนาดของคอลัมน์ */
+  grid-template-rows: repeat(3, 1fr); /* กำหนดจำนวนและขนาดของแถว */
+  gap: 5px; /* กำหนดระยะห่างระหว่างเซลล์ */
+  margin: 50px auto; /* กำหนดระยะห่างของเนื้อหาภายใน board และจัดให้อยู่ตรงกลางแนวนอน */
+  padding: 20px auto; /* กำหนดระยะห่างของเนื้อหาภายใน board และจัดให้อยู่ตรงกลางแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายใน board อยู่ตรงกลางแนวนอน */
 }
 
 .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
-    font-size: 2em;
-    cursor: pointer;
+  display: flex; /* กำหนดให้เนื้อหาภายในเซลล์เรียงแนวนอน */
+  justify-content: center; /* จัดให้เนื้อหาภายในเซลล์อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้เนื้อหาภายในเซลล์อยู่ตรงกลางแนวตั้ง */
+  width: 100px; /* กำหนดความกว้างของเซลล์ */
+  height: 100px; /* กำหนดความสูงของเซลล์ */
+  background-color: #ddd; /* กำหนดสีพื้นหลังของเซลล์ */
+  font-size: 2em; /* กำหนดขนาดข้อความ */
+  cursor: pointer; /* เปลี่ยนรูปแบบเมาส์เป็นเคอร์เซอร์ */
 }
 
 #status {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  font-size: 1.2em; /* กำหนดขนาดข้อความ */
+  margin-bottom: 10px; /* กำหนดระยะห่างด้านล่าง */
 }
 
 #reset-btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #00ff08;
-    color: rgb(65, 62, 62);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px 40px 40px 40px;
+  padding: 10px 20px; /* กำหนดขนาดและระยะห่างของปุ่ม */
+  font-size: 1em; /* กำหนดขนาดข้อ*/
+  background-color: #00ff08; /* กำหนดสีพื้นหลังของปุ่ม */
+  color: rgb(65, 62, 62); /* กำหนดสีข้อความของปุ่ม */
+  border: none; /* ไม่มีการกำหนดเส้นขอบ */
+  border-radius: 5px; /* กำหนดขอบมนของปุ่ม */
+  cursor: pointer; /* เปลี่ยนรูปแบบเมาส์เป็นเคอร์เซอร์ */
+  margin: 20px 40px 40px 40px; /* กำหนดระยะห่างของปุ่ม */
 }
 
 #reset-btn:hover {
-    background-color: #45a049;
+  background-color: #45a049; /* เปลี่ยนสีพื้นหลังของปุ่มเมื่อ hover */
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin: 40;
+  background-color: #333; /* กำหนดสีพื้นหลังของ footer */
+  color: #fff; /* กำหนดสีข้อความของ footer */
+  text-align: center; /* จัดให้ข้อความใน footer อยู่ตรงกลาง */
+  padding: 20px; /* กำหนดระยะห่างของข้อความภายใน footer */
+  margin: 40; /* กำหนดระยะห่างของ footer */
 }
