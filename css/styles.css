@@ -61,8 +61,8 @@ section {
 }
 
 .introduction img {
-  width: 300px;
-  height: auto; 
+  width: 150px;
+  height: 150px; 
   border-radius: 20px;
 }
 
@@ -100,7 +100,7 @@ section {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* แก้ grid-template-columns เป็น 50px */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* แก้ grid-template-columns เป็น 50px */
   grid-gap: 20px;
 }
 
