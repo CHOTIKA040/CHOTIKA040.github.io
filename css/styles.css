@@ -81,6 +81,12 @@ section {
   padding-bottom: 20px;
 }
 
+.Resueme h3 {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .Resueme p {
   text-align: left;
   padding: 5px;
@@ -107,7 +113,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b2e1fb;
+  background-color: #fbfeff;
   padding: 10px;
   border-radius: 10px;
 }
@@ -116,6 +122,56 @@ section {
   width: 80px; /* กำหนดความกว้างของรูปภาพเป็น 50px */
   height: auto; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
 }
+
+
+.container1 {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+.skill-item {
+  margin: 0 20px; /* ระยะห่างระหว่างข้อมูล */
+}
+
+.skill-chart,
+.skill-chart1 {
+  position: relative;
+  width: 100px; /* ขนาดของวงกลม */
+  height: 100px; /* ขนาดของวงกลม */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  background-color: #f0f0f0; /* สีพื้นหลังของวงกลม */
+}
+
+.skill-chart-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #00cc00; /* สีของกราฟฟิก */
+  clip-path: inset(0 30% 0 0); /* ตัดส่วนของวงกลมที่ไม่ต้องการ */
+}
+
+
+.skill-chart-circle1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fadf33; /* สีของกราฟฟิก */
+  clip-path: inset(0 40% 0 0); /* ตัดส่วนของวงกลมที่ไม่ต้องการ */
+}
+
+.skill-chart-percent,
+.skill-chart-percent1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333; /* สีของเลข % */
+}
+
 
 @media screen and (max-width: 600px) {
   .contact {

@@ -36,8 +36,8 @@ main {
 }
 
 .popup {
-  background-color: rgba(37, 117, 255, 0.8);
-  color: #fff;
+  background-color: rgba(5, 5, 5, 0.8);
+  color: #fbed25;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
